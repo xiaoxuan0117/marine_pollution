@@ -1,6 +1,4 @@
 import React from "react";
-import classNames from "classnames";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
 
 import "swiper/css";
@@ -42,10 +40,7 @@ export default function SkillItem() {
   return (
     <div className="skillItem-wrapper">
       <div className="skillItem">
-        <div className="itme-title">{t("web-skills")}</div>
-        <div className="scroll">
-          <img src={scroll} alt="scroll" />
-        </div>
+        <div className="item-title">{t("web-skills")}</div>
         {skills.map((skill) => (
           <div key={skill.title} className={`skill ${skill.type}`}>
             <div className="title">{skill.title}</div>

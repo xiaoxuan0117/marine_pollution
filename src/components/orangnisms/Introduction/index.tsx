@@ -16,14 +16,14 @@ export default function Introduction() {
       gsap.to(introWrapper.current, {
         scrollTrigger: {
           trigger: introWrapper.current,
-          start: `top ${(introWrapper.current?.offsetTop || 0) - 100}px`,
+          start: `top ${(introWrapper.current?.offsetTop || 0) - 200}px`,
           end: "bottom top",
           toggleClass: "active",
-          markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "fuchsia",
+          //   fontSize: "3rem",
+          // },
         },
       });
     });

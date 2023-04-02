@@ -12,21 +12,13 @@
     flex-wrap: wrap;
     width: 100%;
 
-    & .itme-title {
+    & .item-title {
       position: absolute;
       right: 0;
       bottom: 0;
       font-size: $font-h2;
       font-weight: 600;
       color: $light-blue;
-    }
-
-    & .scroll {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      animation: scroll 2s ease infinite both;
     }
 
     & .skill {

@@ -2,11 +2,15 @@
 @import "../../../sass/color.scss";
 
 .skills-wrapper {
-  width: 800px;
+  width: 60vw;
   // flex: 1;
   padding: 45px 0;
 
   & .skills {
     width: 100%;
+
+    & .swiper-scrollbar {
+      opacity: 1 !important;
+    }
   }
 }

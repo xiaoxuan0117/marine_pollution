@@ -1,0 +1,66 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.expItem-wrapper {
+  height: max-content;
+  padding: 39px 0;
+
+  & .expItem {
+    position: relative;
+    width: 100%;
+
+    & .item-title {
+      font-size: $font-h2;
+      font-weight: 600;
+      color: $pink;
+      margin-bottom: 24px;
+    }
+
+    & .item-context {
+      font-size: $font-h5;
+      font-weight: 500;
+      color: $dark-gray;
+      letter-spacing: 2px;
+      margin-bottom: 38px;
+    }
+
+    & .project-section {
+      position: relative;
+      width: 100%;
+
+      & .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & .project {
+          flex: 1;
+          padding-right: 25px;
+
+          & .title {
+            font-size: $font-h5;
+            font-weight: 700;
+            color: $main-blue;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+          }
+
+          & .divided {
+            width: 100%;
+            height: 5px;
+            border-radius: 5px;
+            background-color: $main-blue;
+            margin-bottom: 12px;
+          }
+
+          & .context {
+            font-size: $font-h6;
+            font-weight: 500;
+            color: $dark-gray;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+  }
+}
