@@ -1,0 +1,20 @@
+{
+  "myName": "潘小璇 Kate",
+  "major": "科系",
+  "school": "畢業於成功大學",
+  "major-content": "主修地科 / 雙主修工業與資訊管理",
+  "work": "工作經驗",
+  "work-content": "於新芽網路公司擔任前端開發實習生",
+  "duration": "實習經驗 9 個月",
+  "web-skills": "網頁開發技能",
+  "front-end": "前端",
+  "front-end-skills": "React、HTML、CSS、JavaScript、TypeScript",
+  "back-end": "後端",
+  "back-end-skills": "NodeJS、SQL",
+  "package": "套件",
+  "package-skills": "React-router、Redux、Redux-middleware、axios、Storybook、Jest、Express、MongoDB、Webpack、Express、MongoDB、Webpack",
+  "other": "其他",
+  "other-skills": "git",
+  "design": "設計",
+  "design-skills": "Illustrator、Adobe XD, Figma"
+}

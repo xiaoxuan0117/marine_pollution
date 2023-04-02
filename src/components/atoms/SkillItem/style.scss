@@ -1,0 +1,70 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.skillItem-wrapper {
+  height: max-content;
+  padding: 39px 0;
+
+  & .skillItem {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & .itme-title {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: $font-h2;
+      font-weight: 600;
+      color: $light-blue;
+    }
+
+    & .scroll {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: scroll 2s ease infinite both;
+    }
+
+    & .skill {
+      margin-bottom: 23px;
+      margin-right: 67px;
+
+      &.package {
+        width: 100%;
+      }
+
+      &.other {
+        width: 100%;
+      }
+
+      & .title {
+        font-size: $font-h5;
+        font-weight: 600;
+        color: $main-blue;
+        margin-bottom: 7px;
+      }
+
+      & .context {
+        font-size: $font-h6;
+        font-weight: 500;
+        color: $dark-gray;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    right: 10px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}

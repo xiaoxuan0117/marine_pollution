@@ -1,0 +1,35 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.profile-wrapper {
+  & .profile {
+    padding: 45px 57px;
+    & .content {
+      & .name {
+        font-size: $font-h5;
+        font-weight: 800;
+        color: $main-blue;
+        letter-spacing: 2px;
+        margin-bottom: 36px;
+      }
+
+      & .info-box {
+        margin-bottom: 36px;
+
+        & .title {
+          font-size: $font-h6;
+          font-weight: 600;
+          color: $main-blue;
+          margin-bottom: 7px;
+        }
+
+        & .context {
+          font-size: $font-p;
+          font-weight: 600;
+          color: $dark-gray;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

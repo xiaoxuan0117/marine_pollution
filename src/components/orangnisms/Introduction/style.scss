@@ -1,0 +1,26 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.intro-wrapper {
+  transition: all 0.5s;
+  &.active {
+    padding: 0 26px;
+
+    & .intro {
+      border-radius: 8px;
+    }
+  }
+
+  & .intro {
+    position: relative;
+    background-color: $white;
+    width: 100%;
+    box-shadow: 3px 3px 10px 5px rgba($color: #000000, $alpha: 0.2);
+
+    & .intro-flex {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}

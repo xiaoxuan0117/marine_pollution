@@ -1,0 +1,12 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.skills-wrapper {
+  width: 800px;
+  // flex: 1;
+  padding: 45px 0;
+
+  & .skills {
+    width: 100%;
+  }
+}

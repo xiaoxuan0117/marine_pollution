@@ -1,0 +1,44 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.pined-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $main-blue;
+  z-index: -1;
+
+  & .circle_01 {
+    position: absolute;
+    bottom: -50px;
+    right: 300px;
+    backdrop-filter: blur(20px);
+    -webkit-mask: url("../../../assets/circleMask_01.svg") no-repeat center
+      center;
+    mask: url("../../../assets/circleMask_01.svg") no-repeat center center;
+  }
+
+  & .circle_02 {
+    position: absolute;
+    bottom: 100px;
+    right: 150px;
+  }
+
+  & .circle_03 {
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    backdrop-filter: blur(20px);
+    -webkit-mask: url("../../../assets/circleMask_03.svg") no-repeat center
+      center;
+    mask: url("../../../assets/circleMask_03.svg") no-repeat center center;
+  }
+
+  & .circle_04 {
+    position: absolute;
+    top: -100px;
+    left: -150px;
+  }
+}

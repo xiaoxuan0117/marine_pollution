@@ -1,0 +1,49 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.banner-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .banner {
+    padding-right: 300px;
+
+    & .title {
+      font-size: $font-h1;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background-image: linear-gradient(
+        to right,
+        $light-blue,
+        $dark-pink,
+        $pink
+      );
+      background-size: 100%;
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      // color: -webkit-linear-gradient(to right, $light-blue, $dark-pink, $pink);
+      // color: -moz-linear-gradient(to right, $light-blue, $dark-pink, $pink);
+      // color: -o-linear-gradient(to right, $light-blue, $dark-pink, $pink);
+      // color: linear-gradient(to right, $light-blue, $dark-pink, $pink);
+      // background-color: linear-gradient(
+      //   to right,
+      //   $light-blue,
+      //   $dark-pink,
+      //   $pink
+      // );
+    }
+    & .subtitle {
+      font-size: $font-h5;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: $white;
+      line-height: 25px;
+    }
+  }
+}
