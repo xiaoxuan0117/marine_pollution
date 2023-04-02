@@ -1,0 +1,43 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.works-wrapper {
+  margin-top: 100px;
+  height: 100%;
+
+  & .works {
+    position: relative;
+    width: 100%;
+
+    & .content {
+      display: flex;
+      flex-direction: row;
+
+      & .title {
+        position: relative;
+        font-size: $font-h1;
+        font-weight: 700;
+        color: $white;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        margin-right: 67px;
+      }
+
+      & .works-section {
+        width: 80vw;
+
+        & .swiper-slide {
+          height: auto;
+        }
+
+        & .swiper-scrollbar {
+          opacity: 1 !important;
+
+          & .swiper-scrollbar-drag {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}

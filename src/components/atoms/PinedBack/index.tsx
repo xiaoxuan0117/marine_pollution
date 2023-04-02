@@ -9,23 +9,24 @@ import circle_04 from "../../../assets/circle_04.svg";
 import "./style.scss";
 
 interface PinedBackProps {
-  PinedBackRef: React.LegacyRef<HTMLDivElement> | undefined;
+  pinedBackRef: React.LegacyRef<HTMLDivElement> | undefined;
+  circlesRef: React.LegacyRef<HTMLDivElement>[];
 }
 
 export default function PinedBack(props: PinedBackProps) {
-  const { PinedBackRef } = props;
+  const { pinedBackRef, circlesRef } = props;
   return (
-    <div className="pined-back" ref={PinedBackRef}>
-      <div className="circle_02">
+    <div className="pined-back" ref={pinedBackRef}>
+      <div className="circle_02" ref={circlesRef[1]}>
         <img src={circle_02} alt="circle" />
       </div>
-      <div className="circle_01">
+      <div className="circle_01" ref={circlesRef[0]}>
         <img src={circle_01} alt="circle" />
       </div>
-      <div className="circle_04">
+      <div className="circle_04" ref={circlesRef[3]}>
         <img src={circle_04} alt="circle" />
       </div>
-      <div className="circle_03">
+      <div className="circle_03" ref={circlesRef[2]}>
         <img src={circle_03} alt="circle" />
       </div>
     </div>

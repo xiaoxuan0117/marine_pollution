@@ -1,0 +1,38 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.workItem-wrapper {
+  & .workItem {
+    & .images-section {
+      & .images {
+        & a {
+          &.banner {
+            flex: 1;
+
+            & .image-inner {
+              width: auto;
+              padding-top: 55%;
+
+              & .image {
+                background-image: url(../../../assets/enterprise_1.png);
+              }
+            }
+          }
+
+          &.comment {
+            flex: 1;
+
+            & .image-inner {
+              width: auto;
+              padding-top: 55%;
+
+              & .image {
+                background-image: url(../../../assets/enterprise_2.png);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

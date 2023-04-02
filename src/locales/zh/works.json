@@ -1,0 +1,12 @@
+{
+  "my-works": "個人作品",
+  "music-title": "音樂介紹網站",
+  "music-subtitle": "靜態網站",
+  "music-context": "這是在校時製作的網頁設計專題，運用了基本的網頁設計三大工具，JavaScript、HTML 和 CSS，來製作出音樂介紹的網頁，各個網頁分別代表不同的音樂曲風和類型，可以在這裡探索多元的音樂！",
+  "enterprise-title": "企業地圖網站",
+  "enterprise-subtitle": "動態網站",
+  "enterprise-context": "這是在校時製作的資料庫專案，以 PHP、HTML、CSS 為基礎製作，提供使用者可以分享面試與工作的心得，包含有註冊、登入、發文和留言等功能",
+  "task-title": "github issues 管理網站",
+  "task-subtitle": "動態網站",
+  "task-context": "這是可以管理個人 github issues 的網站，前端使用了 React 框架和 Redux 、 React-router 等工具，後端則使用 Nodejs 和 Express 架設伺服器，並且透過 github REST API 串接資料。網站中包含登入、新增和編輯 issue 以及搜尋 issues 等功能"
+}
