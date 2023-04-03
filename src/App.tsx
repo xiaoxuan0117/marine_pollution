@@ -1,7 +1,8 @@
-import { useState, useLayoutEffect, useRef } from "react";
+import { useState, useLayoutEffect, useRef, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import i18n from "./util/i18n";
 
 import Banner from "./components/orangnisms/Banner";
 import Introduction from "./components/orangnisms/Introduction";
@@ -10,8 +11,6 @@ import FunctionDropdown from "./components/molecules/FunctionDropdown";
 import Works from "./components/orangnisms/Works";
 import OtherInfo from "./components/orangnisms/OtherInfo";
 import Footer from "./components/orangnisms/Footer";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 
 import "./App.scss";
 
@@ -24,13 +23,13 @@ function App() {
   const circle03 = useRef<HTMLDivElement>(null);
   const circle04 = useRef<HTMLDivElement>(null);
 
+  const [lng, setLng] = useState(i18n.language);
+
   useLayoutEffect(() => {
     console.log(
-      "works.current?.scrollTop",
+      "height",
       works.current?.offsetTop,
-      works.current?.clientHeight,
-      content.current?.clientHeight,
-      (works.current?.offsetTop || 0) + (works.current?.clientHeight || 0)
+      works.current?.offsetHeight
     );
     const ctx = gsap.context(() => {
       gsap.to(pinedBack.current, {
@@ -43,11 +42,11 @@ function App() {
             10
           }px bottom`,
           pin: pinedBack.current,
-          // markers: {
-          //   startColor: "purple",
-          //   endColor: "blue",
-          //   fontSize: "3rem",
-          // },
+          markers: {
+            startColor: "purple",
+            endColor: "blue",
+            fontSize: "3rem",
+          },
         },
       });
 
@@ -97,7 +96,11 @@ function App() {
     }, ".App");
 
     return () => ctx.revert();
-  });
+  }, [lng]);
+
+  useEffect(() => {
+    "rerender";
+  }, [lng]);
 
   return (
     <div className="App">
@@ -112,7 +115,7 @@ function App() {
         <OtherInfo />
         <Footer />
       </div>
-      <FunctionDropdown />
+      <FunctionDropdown setLng={setLng} />
     </div>
   );
 }

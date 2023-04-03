@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../util/i18n";
@@ -7,7 +7,9 @@ import functionDropdown from "../../../assets/function.png";
 
 import "./style.scss";
 
-export default function FunctionDropdown() {
+export default function FunctionDropdown(props: {
+  setLng: Dispatch<SetStateAction<string>>;
+}) {
   const { t } = useTranslation(["functionDropdown"]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,13 +35,20 @@ export default function FunctionDropdown() {
   };
 
   const ingChange = (lng: string) => {
+    props.setLng(lng);
     i18n.changeLanguage(lng);
   };
 
   useEffect(() => {
     const handler = (event: MouseEvent) => {
       const target = event.target as Element;
-      if (isOpen && target.classList.value !== "function-button") {
+      const preventList = [
+        "function-button",
+        "zh option",
+        "en option",
+        "scroll-top",
+      ];
+      if (isOpen && !preventList.includes(target.classList.value)) {
         api.start({
           from: {
             scale: 1,

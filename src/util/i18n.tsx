@@ -9,9 +9,10 @@ i18n
   .use(initReactI18next)
   .use(LanguageDetector)
   .init({
-    debug: true, // debug工具
-    fallbackLng: "zh",
+    debug: false, // debug工具
+    fallbackLng: "en",
     lng: "zh", // 指定語言
+    defaultNS: "banne",
     backend: {
       loadPath: "src/locales/{{lng}}/{{ns}}.json",
     },
