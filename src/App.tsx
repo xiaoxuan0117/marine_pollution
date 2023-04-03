@@ -42,11 +42,11 @@ function App() {
             10
           }px bottom`,
           pin: pinedBack.current,
-          markers: {
-            startColor: "purple",
-            endColor: "blue",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "blue",
+          //   fontSize: "3rem",
+          // },
         },
       });
 
@@ -96,10 +96,6 @@ function App() {
     }, ".App");
 
     return () => ctx.revert();
-  }, [lng]);
-
-  useEffect(() => {
-    "rerender";
   }, [lng]);
 
   return (
