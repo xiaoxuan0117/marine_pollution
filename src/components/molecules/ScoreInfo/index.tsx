@@ -32,7 +32,7 @@ export default function ScoreInfo() {
           <div className="items">
             {scoreItems &&
               scoreItems.map((scoreItem) => (
-                <div key={scoreItem.type} className="item">
+                <div key={scoreItem.type} className={`item ${scoreItem.type}`}>
                   <ScoreInfoItem
                     type={scoreItem.type}
                     title={scoreItem.title}

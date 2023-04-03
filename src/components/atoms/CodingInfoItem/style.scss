@@ -27,5 +27,17 @@
       color: $dark-gray;
       line-height: 30px;
     }
+
+    @media screen and (max-width: 860px) {
+      padding: 18px 12px;
+
+      & .title {
+        font-size: $font-h5;
+      }
+
+      & .context {
+        font-size: $font-h6;
+      }
+    }
   }
 }

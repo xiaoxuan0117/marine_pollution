@@ -2,8 +2,6 @@
 @import "../../../sass/color.scss";
 
 .scoreItem-wrapper {
-  text-align: center;
-
   & .scoreItem {
     & .title {
       font-size: $font-h4;
@@ -18,6 +16,19 @@
       padding: 15px 40px;
       border-radius: 10px;
       line-height: 30px;
+      width: max-content;
+      margin: auto;
+    }
+
+    @media screen and (max-width: 860px) {
+      & .title {
+        font-size: $font-h5;
+      }
+
+      & .context {
+        font-size: $font-p;
+        padding: 10px 20px;
+      }
     }
   }
 }
