@@ -27,6 +27,28 @@
     }
   }
 
+  @media screen and (max-width: 860px) {
+    padding: 40px 60px;
+
+    & .footer {
+      & .title {
+        font-size: $font-h5;
+      }
+
+      & a {
+        font-size: $font-p;
+      }
+    }
+
+    & .circle_02 {
+      display: none;
+    }
+
+    & .circle_03 {
+      display: none;
+    }
+  }
+
   & .circle_02 {
     position: absolute;
     bottom: -150px;
