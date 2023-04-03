@@ -25,20 +25,29 @@ function App() {
   const circle04 = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
-    console.log("works.current?.scrollTop", works.current?.offsetTop);
+    console.log(
+      "works.current?.scrollTop",
+      works.current?.offsetTop,
+      works.current?.clientHeight,
+      content.current?.clientHeight,
+      (works.current?.offsetTop || 0) + (works.current?.clientHeight || 0)
+    );
     const ctx = gsap.context(() => {
       gsap.to(pinedBack.current, {
         scrollTrigger: {
           trigger: content.current,
-          start: "top 0px",
-          end: `${works.current?.offsetTop || 0 - 500})
-          }px top`,
+          start: "top top",
+          end: `${
+            (works.current?.offsetTop || 0) +
+            (works.current?.offsetHeight || 0) +
+            10
+          }px bottom`,
           pin: pinedBack.current,
           // markers: {
           //   startColor: "purple",
-          //   endColor: "fuchsia",
+          //   endColor: "blue",
           //   fontSize: "3rem",
-          // }
+          // },
         },
       });
 
