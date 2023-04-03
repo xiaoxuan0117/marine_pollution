@@ -11,10 +11,6 @@
   & .banner {
     padding-right: 30vw;
 
-    @media screen and (max-width: 480px) {
-      padding-right: 0;
-    }
-
     & .title {
       font-size: $font-h1;
       font-weight: 800;
@@ -31,16 +27,6 @@
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
-      // color: -webkit-linear-gradient(to right, $light-blue, $dark-pink, $pink);
-      // color: -moz-linear-gradient(to right, $light-blue, $dark-pink, $pink);
-      // color: -o-linear-gradient(to right, $light-blue, $dark-pink, $pink);
-      // color: linear-gradient(to right, $light-blue, $dark-pink, $pink);
-      // background-color: linear-gradient(
-      //   to right,
-      //   $light-blue,
-      //   $dark-pink,
-      //   $pink
-      // );
     }
     & .subtitle {
       font-size: $font-h5;
@@ -48,6 +34,26 @@
       letter-spacing: 2px;
       color: $white;
       line-height: 25px;
+    }
+
+    @media screen and (max-width: 660px) {
+      padding-right: 0;
+
+      & .title {
+        font-size: $font-h2;
+      }
+
+      & .subtitle {
+        font-size: $font-h6;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      text-align: center;
+
+      & .subtitle {
+        font-size: $font-p;
+      }
     }
   }
 }
