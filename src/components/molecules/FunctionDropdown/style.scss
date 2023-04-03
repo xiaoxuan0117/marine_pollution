@@ -9,10 +9,14 @@
   text-align: end;
 
   & .function {
+    position: relative;
     & img {
       cursor: pointer;
     }
     & .dropdown-wrapper {
+      position: absolute;
+      right: 0;
+      width: max-content;
       transform-origin: top right;
       background-color: $white;
       border-radius: 8px;

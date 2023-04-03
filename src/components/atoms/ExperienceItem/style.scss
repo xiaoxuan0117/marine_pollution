@@ -24,6 +24,26 @@
       margin-bottom: 38px;
     }
 
+    @media screen and (max-width: 660px) {
+      & .item-title {
+        font-size: $font-h4;
+      }
+
+      & .item-context {
+        font-size: $font-h6;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      & .item-title {
+        font-size: $font-h3;
+      }
+
+      & .item-context {
+        font-size: $font-h6;
+      }
+    }
+
     & .project-section {
       position: relative;
       width: 100%;
@@ -36,12 +56,17 @@
         & .project {
           flex: 1;
           padding-right: 25px;
+          margin-bottom: 20px;
+
+          @media screen and (max-width: 860px) {
+            flex: unset;
+          }
 
           & .title {
             font-size: $font-h5;
             font-weight: 700;
             color: $main-blue;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             margin-bottom: 12px;
           }
 
@@ -58,6 +83,18 @@
             font-weight: 500;
             color: $dark-gray;
             line-height: 23px;
+          }
+
+          @media screen and (max-width: 480px) {
+            padding-right: 0;
+
+            & .title {
+              font-size: $font-h6;
+            }
+
+            & .context {
+              font-size: $font-p;
+            }
           }
         }
       }

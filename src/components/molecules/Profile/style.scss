@@ -4,6 +4,16 @@
 .profile-wrapper {
   & .profile {
     padding: 45px 57px;
+
+    @media screen and (max-width: 860px) {
+      padding: 45px 30px;
+    }
+
+    @media screen and (max-width: 660px) {
+      padding: 0 30px;
+      text-align: center;
+    }
+
     & .content {
       & .name {
         font-size: $font-h4;
@@ -28,6 +38,10 @@
           font-weight: 500;
           color: $dark-gray;
           letter-spacing: 1px;
+
+          & div {
+            margin-bottom: 10px;
+          }
         }
       }
     }

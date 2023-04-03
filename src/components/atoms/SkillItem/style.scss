@@ -22,6 +22,10 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media screen and (max-width: 860px) {
+      margin-bottom: 30px;
+    }
+
     & .skill {
       margin-bottom: 23px;
       margin-right: 67px;
@@ -46,6 +50,27 @@
         font-weight: 500;
         color: $dark-gray;
         line-height: 25px;
+      }
+
+      @media screen and (max-width: 660px) {
+        & .title {
+          font-size: $font-h5;
+        }
+
+        & .context {
+          font-size: $font-p;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        margin: 0;
+        & .title {
+          font-size: $font-h5;
+        }
+
+        & .context {
+          font-size: $font-p;
+        }
       }
     }
   }
