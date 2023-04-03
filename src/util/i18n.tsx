@@ -11,7 +11,6 @@ i18n
   .init({
     debug: true, // debug工具
     fallbackLng: "zh",
-    defaultNS: "translation",
     lng: "zh", // 指定語言
     backend: {
       loadPath: "src/locales/{{lng}}/{{ns}}.json",

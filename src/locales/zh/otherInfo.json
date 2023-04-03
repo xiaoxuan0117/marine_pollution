@@ -1,7 +1,7 @@
 {
   "coding-title": "其他程式設計相關經驗",
   "ai": "Python x AI",
-  "ai-context": "利用 Keras and TensorFlow 進行資料分析，用 Multilayer Perceptron 實作學習分辨太極圖的黑白兩色",
+  "ai-context": "利用 Keras and TensorFlow 進行資料分析，用 Multilayer Perceptron 製作分辨太極圖中黑白兩色的模型",
   "data-structure": "資料結構",
   "data-structure-context": "使用 c++ 完成 insertion sort、merge sort、heap sort 和 quick sort 等排序方法",
   "project-manage": "專案管理系統",

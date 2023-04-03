@@ -15,9 +15,6 @@ export default function ScoreInfoItem(props: scoreInfoItemProps) {
     <div className="scoreItem-wrapper">
       <div className="scoreItem">
         <div className="title">{title}</div>
-        <div className="icon">
-          <img src={`src/assets/${type}.svg`} alt="" />
-        </div>
         <div className="context">{context}</div>
       </div>
     </div>

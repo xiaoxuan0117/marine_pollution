@@ -1,0 +1,16 @@
+{
+  "coding-title": "Other programming experience",
+  "ai": "Python x AI",
+  "ai-context": "Use Keras and TensorFlow for data analysis, and use Multilayer Perceptron to make a model for distinguishing black and white in Tai Chi",
+  "data-structure": "Data structure",
+  "data-structure-context": "Use c++ to complete sorting methods such as insertion sort, merge sort, heap sort and quick sort",
+  "project-manage": "Project Management System",
+  "project-manage-context": "Create a project management system based on Microsoft Project to optimize the factory operation process, and use Visual Basic Application to create customized functions in the system",
+  "score-title": "Other information",
+  "gpa": "GPA/4.0",
+  "gpa-value": "3.7",
+  "toeic": "Toeic",
+  "toeic-value": "855",
+  "course": "Online course certification",
+  "course-value": "Hahow從入門到業界實戰－UI/UX前端網頁設計"
+}

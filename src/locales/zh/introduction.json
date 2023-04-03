@@ -1,6 +1,6 @@
 {
   "myName": "潘小璇 Kate",
-  "major": "科系",
+  "major": "學歷",
   "school": "畢業於成功大學",
   "major-content": "主修地科 / 雙主修工業與資訊管理",
   "work": "工作經驗",
@@ -20,9 +20,9 @@
   "project-experience": "專案經驗",
   "project-context": "過去曾有靜態網頁和動態網頁的製作經驗，工作上也具備與 PM、後端溝通開發的能力，以下是實作專案的詳細說明",
   "cart": "網站購物車更新",
-  "cart-context": "透過 react 結合 redux、redux-observable 和串接 api，來完成購物車中的會員紅利點數與優惠折扣的計算功能",
+  "cart-context": "透過 React 結合 Redux、redux-observable 和串接 API，來完成購物車中的會員紅利點數與優惠折扣的計算功能",
   "layout": "網頁套版維護",
   "layout-context": "使用 JavaScript、JQuery 維護前端程式碼，並協助解決客戶於套版時遇到的問題，內容涵蓋 UI 呈現、互動功能與跨裝置整合等",
   "error": "錯誤訊息處理優化",
-  "error-context": "基於 react 和 redux 串接 api，將失敗訊息呈現於介面以優化使用者體驗"
+  "error-context": "基於 React 和 Redux 串接 API，將失敗訊息呈現於介面以優化使用者體驗"
 }

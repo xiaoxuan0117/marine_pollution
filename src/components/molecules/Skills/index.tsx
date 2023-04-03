@@ -17,6 +17,7 @@ export default function Skills() {
           scrollbar={{
             hide: true,
           }}
+          spaceBetween={100}
           modules={[Scrollbar]}
         >
           <SwiperSlide>

@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 import Banner from "./components/orangnisms/Banner";
 import Introduction from "./components/orangnisms/Introduction";
 import PinedBack from "./components/atoms/PinedBack";
+import FunctionDropdown from "./components/molecules/FunctionDropdown";
 import Works from "./components/orangnisms/Works";
 import OtherInfo from "./components/orangnisms/OtherInfo";
 import Footer from "./components/orangnisms/Footer";
@@ -102,6 +103,7 @@ function App() {
         <OtherInfo />
         <Footer />
       </div>
+      <FunctionDropdown />
     </div>
   );
 }

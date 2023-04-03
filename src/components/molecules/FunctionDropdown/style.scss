@@ -1,0 +1,77 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.function-wrapper {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+  text-align: end;
+
+  & .function {
+    & img {
+      cursor: pointer;
+    }
+    & .dropdown-wrapper {
+      transform-origin: top right;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 24px 21px;
+      margin-right: 10px;
+      text-align: start;
+      box-shadow: 3px 3px 8px 3px rgba($color: $black, $alpha: 0.2);
+
+      & .dropdown {
+        & .scroll-top {
+          font-size: $font-h5;
+          font-weight: 500;
+          color: $main-blue;
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 8px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $light-gray;
+          }
+        }
+        & .lng {
+          padding: 10px;
+          & .title {
+            font-size: $font-h5;
+            font-weight: 500;
+            color: $main-blue;
+            margin-bottom: 10px;
+          }
+
+          & .options {
+            & .option {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              font-size: $font-h6;
+              color: $dark-gray;
+              margin-bottom: 5px;
+              cursor: pointer;
+
+              & .choose {
+                display: none;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $main-blue;
+                margin-left: 10px;
+              }
+
+              &:hover {
+                & .choose {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

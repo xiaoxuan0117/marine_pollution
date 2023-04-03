@@ -1,18 +1,18 @@
-import React, { LegacyRef } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./style.scss";
 
-interface BannerProps {}
-
-export default function Banner(props: BannerProps) {
+export default function Banner() {
+  const { t } = useTranslation(["banner"]);
   return (
     <div id="banner" className="banner-wrapper">
       <div className="banner">
         <div className="title">Hi! I'm Kate</div>
         <div className="subtitle">
-          我是一位前端開發者，熱愛程式設計和網頁開發
+          {t("intro")}
           <br />
-          請往下滾動了解更多!
+          {t("scroll")}
         </div>
       </div>
     </div>
