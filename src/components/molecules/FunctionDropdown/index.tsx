@@ -18,15 +18,27 @@ export default function FunctionDropdown(props: {
   }));
 
   const handleDropdown = () => {
-    api.start({
-      from: {
-        scale: 0,
-      },
-      to: {
-        scale: 1,
-      },
-      config: { tension: 120, friction: 14 },
-    });
+    if (!isOpen) {
+      api.start({
+        from: {
+          scale: 0,
+        },
+        to: {
+          scale: 1,
+        },
+        config: { tension: 120, friction: 14 },
+      });
+    } else {
+      api.start({
+        from: {
+          scale: 1,
+        },
+        to: {
+          scale: 0,
+        },
+        config: { tension: 100, friction: 20 },
+      });
+    }
     setIsOpen(!isOpen);
   };
 
