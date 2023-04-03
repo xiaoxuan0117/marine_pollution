@@ -8,6 +8,7 @@ import Introduction from "./components/orangnisms/Introduction";
 import PinedBack from "./components/atoms/PinedBack";
 import Works from "./components/orangnisms/Works";
 import OtherInfo from "./components/orangnisms/OtherInfo";
+import Footer from "./components/orangnisms/Footer";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
@@ -99,6 +100,7 @@ function App() {
         <Introduction />
         <Works worksRef={works} />
         <OtherInfo />
+        <Footer />
       </div>
     </div>
   );

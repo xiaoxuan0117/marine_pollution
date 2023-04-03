@@ -1,0 +1,40 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.footer-wrapper {
+  position: relative;
+  background-color: $main-blue;
+  border-radius: 20px 20px 0 0;
+  padding: 60px 100px;
+  color: $white;
+
+  & .title {
+    font-size: $font-h4;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: $font-h5;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: $white;
+  }
+
+  & .circle_02 {
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+  }
+
+  & .circle_03 {
+    position: absolute;
+    bottom: -250px;
+    right: 0px;
+    backdrop-filter: blur(20px);
+    -webkit-mask: url("../../../assets/circleMask_03.svg") no-repeat center
+      center;
+    mask: url("../../../assets/circleMask_03.svg") no-repeat center center;
+  }
+}
