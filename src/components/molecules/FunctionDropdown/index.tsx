@@ -48,10 +48,22 @@ export default function FunctionDropdown(props: {
         "en option",
         "scroll-top",
       ];
+      console.log(isOpen);
       if (isOpen && !preventList.includes(target.classList.value)) {
         api.start({
           from: {
             scale: 1,
+          },
+          to: {
+            scale: 0,
+          },
+          config: { tension: 100, friction: 20 },
+        });
+        setIsOpen(false);
+      } else if (!preventList.includes(target.classList.value)) {
+        api.start({
+          from: {
+            scale: 0,
           },
           to: {
             scale: 0,
