@@ -8,7 +8,7 @@ export default function Banner() {
   return (
     <div id="banner" className="banner-wrapper">
       <div className="banner">
-        <div className="title">Hi! I'm Kate</div>
+        <div className="title">Hi! I'm Xiao-xuan</div>
         <div className="subtitle">
           {t("intro")}
           <br />
