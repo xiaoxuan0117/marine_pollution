@@ -9,6 +9,7 @@
   height: 100vh;
   background-color: $main-blue;
   z-index: -1;
+  overflow: hidden;
 
   & .circle_01 {
     position: absolute;
@@ -40,5 +41,29 @@
     position: absolute;
     top: -100px;
     left: -150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    & .circle_01 {
+      bottom: -40px;
+      right: 100px;
+    }
+
+    & .circle_02 {
+      bottom: 100px;
+      right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    & .circle_01 {
+      bottom: -100px;
+      right: 50px;
+    }
+
+    & .circle_02 {
+      bottom: 0px;
+      right: -10px;
+    }
   }
 }

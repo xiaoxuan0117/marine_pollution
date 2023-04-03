@@ -9,7 +9,11 @@
   align-items: center;
 
   & .banner {
-    padding-right: 300px;
+    padding-right: 30vw;
+
+    @media screen and (max-width: 480px) {
+      padding-right: 0;
+    }
 
     & .title {
       font-size: $font-h1;
