@@ -24,19 +24,9 @@
       margin-bottom: 38px;
     }
 
-    @media screen and (max-width: 660px) {
-      & .item-title {
-        font-size: $font-h4;
-      }
-
-      & .item-context {
-        font-size: $font-h6;
-      }
-    }
-
     @media screen and (max-width: 480px) {
       & .item-title {
-        font-size: $font-h3;
+        font-size: $font-h4;
       }
 
       & .item-context {
