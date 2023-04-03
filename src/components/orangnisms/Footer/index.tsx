@@ -39,6 +39,10 @@ export default function Footer() {
         },
       });
     });
+
+    return () => {
+      ctx.revert();
+    };
   });
 
   return (
