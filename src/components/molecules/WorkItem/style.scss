@@ -28,11 +28,24 @@
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+        flex-wrap: wrap;
 
         & a {
           position: relative;
           box-sizing: border-box;
           margin-right: 30px;
+
+          @media screen and (max-width: 860px) {
+            margin-right: 20px;
+          }
+
+          @media screen and (max-width: 660px) {
+            margin-right: 10px;
+          }
+
+          // @media screen and (max-width: 480px) {
+          //   flex: unset !important;
+          // }
 
           &.r-and-b {
             flex: 3;

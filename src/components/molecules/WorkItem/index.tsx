@@ -20,7 +20,7 @@ export default function WorkItem() {
       gsap.to(image01.current, {
         scrollTrigger: {
           trigger: image01.current,
-          start: "top 700px",
+          start: "top 800px",
           toggleClass: "active",
           // markers: {
           //   startColor: "purple",
@@ -32,7 +32,7 @@ export default function WorkItem() {
       gsap.to(image02.current, {
         scrollTrigger: {
           trigger: image02.current,
-          start: "top 600px",
+          start: "top 750px",
           toggleClass: "active",
           // markers: {
           //   startColor: "purple",
@@ -44,7 +44,7 @@ export default function WorkItem() {
       gsap.to(image03.current, {
         scrollTrigger: {
           trigger: image03.current,
-          start: "top 550px",
+          start: "top 700px",
           toggleClass: "active",
           // markers: {
           //   startColor: "purple",
