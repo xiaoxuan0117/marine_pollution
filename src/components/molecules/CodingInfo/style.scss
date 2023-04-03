@@ -1,0 +1,33 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.codingInfo-wrapper {
+  margin-bottom: 125px;
+  & .codingInfo {
+    padding: 0 173px;
+
+    & .title {
+      text-align: center;
+      font-size: $font-h3;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $main-blue;
+      margin-bottom: 60px;
+    }
+
+    & .items-section {
+      position: relative;
+      & .items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: wrap;
+
+        & .item {
+          padding: 0 10px;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

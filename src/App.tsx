@@ -7,6 +7,7 @@ import Banner from "./components/orangnisms/Banner";
 import Introduction from "./components/orangnisms/Introduction";
 import PinedBack from "./components/atoms/PinedBack";
 import Works from "./components/orangnisms/Works";
+import OtherInfo from "./components/orangnisms/OtherInfo";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
@@ -22,12 +23,14 @@ function App() {
   const circle04 = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
+    console.log("works.current?.scrollTop", works.current?.offsetTop);
     const ctx = gsap.context(() => {
       gsap.to(pinedBack.current, {
         scrollTrigger: {
           trigger: content.current,
           start: "top 0px",
-          // end: "700px 450px",
+          end: `${works.current?.offsetTop || 0 - 500})
+          }px top`,
           pin: pinedBack.current,
           // markers: {
           //   startColor: "purple",
@@ -95,6 +98,7 @@ function App() {
         <Banner />
         <Introduction />
         <Works worksRef={works} />
+        <OtherInfo />
       </div>
     </div>
   );
