@@ -68,6 +68,7 @@ export default function WorkItem() {
           context={t("music-context")}
         />
         <div className="images-section">
+          <div className="click">{t("click-img")}</div>
           <div className="images">
             <a href="#" className="r-and-b">
               <div className="imgbox">

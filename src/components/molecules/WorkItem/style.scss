@@ -18,6 +18,12 @@
       width: 100%;
       margin: 40px 0;
 
+      & .click {
+        font-size: $font-p;
+        color: $light-gray;
+        margin-bottom: 10px;
+      }
+
       & .images {
         display: flex;
         flex-direction: row;
