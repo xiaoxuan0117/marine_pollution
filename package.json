@@ -9,9 +9,7 @@
     "cpdirEn": "copyfiles locales/en/*.json dist",
     "cpdirZh": "copyfiles locales/zh/*.json dist",
     "build": "tsc && vite build && npm run cpdirEn && npm run cpdirZh",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-spring/web": "^9.7.1",
@@ -32,7 +30,6 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "copyfiles": "^2.4.1",
-    "gh-pages": "^5.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }
