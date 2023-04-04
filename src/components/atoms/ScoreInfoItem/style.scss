@@ -11,12 +11,13 @@
 
     & .context {
       font-size: $font-h4;
+      white-space: wrap;
       color: $white;
       background-color: $main-blue;
       padding: 15px 40px;
       border-radius: 10px;
       line-height: 30px;
-      width: max-content;
+      width: fit-content;
       margin: auto;
     }
 
