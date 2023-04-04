@@ -58,14 +58,14 @@ export default function WorkItemTask() {
         <div className="images-section">
           <div className="click">{t("click-img")}</div>
           <div className="images">
-            <a href="#" className="welcome">
+            <a href="https://taskapp-vife.onrender.com/" className="welcome">
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image01}></div>
                 </div>
               </div>
             </a>
-            <a href="#" className="home">
+            <a href="https://taskapp-vife.onrender.com/" className="home">
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image02}></div>

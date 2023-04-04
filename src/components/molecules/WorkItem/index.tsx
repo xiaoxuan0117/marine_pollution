@@ -70,21 +70,30 @@ export default function WorkItem() {
         <div className="images-section">
           <div className="click">{t("click-img")}</div>
           <div className="images">
-            <a href="#" className="r-and-b">
+            <a
+              href="https://xiaoxuan0117.github.io/webDesign_R_and_B/"
+              className="r-and-b"
+            >
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image01}></div>
                 </div>
               </div>
             </a>
-            <a href="#" className="rap">
+            <a
+              href="https://xiaoxuan0117.github.io/webDesign_Rap/"
+              className="rap"
+            >
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image02}></div>
                 </div>
               </div>
             </a>
-            <a href="#" className="kpop">
+            <a
+              href="https://xiaoxuan0117.github.io/webDesign_Kpop/"
+              className="kpop"
+            >
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image03}></div>

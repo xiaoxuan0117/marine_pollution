@@ -57,14 +57,14 @@ export default function WorkItemEnterprise() {
         />
         <div className="images-section">
           <div className="images">
-            <a href="#" className="banner">
+            <a href="#" className="banner disabled">
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image01}></div>
                 </div>
               </div>
             </a>
-            <a href="#" className="comment">
+            <a href="#" className="comment disabled">
               <div className="imgbox">
                 <div className="image-inner">
                   <div className="image" ref={image02}></div>
