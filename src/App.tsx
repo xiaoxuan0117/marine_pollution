@@ -26,11 +26,6 @@ function App() {
   const [lng, setLng] = useState(i18n.language);
 
   useLayoutEffect(() => {
-    console.log(
-      "height",
-      works.current?.offsetTop,
-      works.current?.offsetHeight
-    );
     const ctx = gsap.context(() => {
       gsap.to(pinedBack.current, {
         scrollTrigger: {
@@ -42,11 +37,11 @@ function App() {
             100
           }px bottom`,
           pin: pinedBack.current,
-          markers: {
-            startColor: "purple",
-            endColor: "blue",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "blue",
+          //   fontSize: "3rem",
+          // },
         },
       });
 
