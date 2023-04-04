@@ -14,7 +14,7 @@ i18n
     lng: "zh", // 指定語言
     defaultNS: "banne",
     backend: {
-      loadPath: "src/locales/{{lng}}/{{ns}}.json",
+      loadPath: "locales/{{lng}}/{{ns}}.json",
     },
   });
 
