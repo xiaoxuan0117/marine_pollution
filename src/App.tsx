@@ -39,14 +39,14 @@ function App() {
           end: `${
             (works.current?.offsetTop || 0) +
             (works.current?.offsetHeight || 0) +
-            10
+            100
           }px bottom`,
           pin: pinedBack.current,
-          // markers: {
-          //   startColor: "purple",
-          //   endColor: "blue",
-          //   fontSize: "3rem",
-          // },
+          markers: {
+            startColor: "purple",
+            endColor: "blue",
+            fontSize: "3rem",
+          },
         },
       });
 
