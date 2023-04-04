@@ -3,7 +3,7 @@
 
 .works-wrapper {
   padding: 100px 0;
-  height: 100%;
+  height: 100% + env(safe-area-inset-bottom) + env(safe-area-inset-bottom);
 
   & .works {
     position: relative;
