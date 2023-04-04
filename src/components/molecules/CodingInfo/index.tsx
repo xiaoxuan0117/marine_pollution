@@ -23,6 +23,11 @@ export default function CodingInfo() {
       title: t("project-manage"),
       context: t("project-manage-context"),
     },
+    {
+      type: "react-native",
+      title: t("react-native"),
+      context: t("react-native-context"),
+    },
   ];
 
   return (

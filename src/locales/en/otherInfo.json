@@ -6,6 +6,8 @@
   "data-structure-context": "Use c++ to complete sorting methods such as insertion sort, merge sort, heap sort and quick sort",
   "project-manage": "Project Management System",
   "project-manage-context": "Create a project management system based on Microsoft Project to optimize the factory operation process, and use Visual Basic Application to create customized functions in the system",
+  "react-native":"React-Native",
+  "react-native-context":"Use React Native to make a simple restaurant display app, including functions such as tab page change, list sliding and request API",
   "score-title": "Other information",
   "gpa": "GPA/4.0",
   "gpa-value": "3.7",

@@ -6,6 +6,8 @@
   "data-structure-context": "使用 c++ 完成 insertion sort、merge sort、heap sort 和 quick sort 等排序方法",
   "project-manage": "專案管理系統",
   "project-manage-context": "基於 Microsoft Project 製作專案管理系統，以優化工廠運作流程，並用 Visual Basic Application 實現系統中客製化功能",
+  "react-native":"React-Native",
+  "react-native-context":"利用 React Native 製作簡易的餐廳展示 App，包含有 Tab 換頁、清單滑動和請求 API 等功能",
   "score-title": "其他資訊",
   "gpa": "GPA/4.0",
   "gpa-value": "3.7",
