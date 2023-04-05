@@ -15,6 +15,15 @@
     }
 
     & .content {
+      & .photo {
+        margin: 20px 0;
+        & img {
+          background-color: $light-gray;
+          border-radius: 4px;
+          width: 150px;
+          height: auto;
+        }
+      }
       & .name {
         font-size: $font-h4;
         font-weight: 800;
