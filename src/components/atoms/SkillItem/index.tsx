@@ -39,7 +39,10 @@ export default function SkillItem() {
   ];
   return (
     <div className="skillItem-wrapper">
-      <div className="item-title">{t("web-skills")}</div>
+      <div className="item-title">
+        {t("web-skills")}
+        <div className="swipe">{t("swipe-to-right")}</div>
+      </div>
       <div className="skillItem">
         {skills.map((skill) => (
           <div key={skill.title} className={`skill ${skill.type}`}>

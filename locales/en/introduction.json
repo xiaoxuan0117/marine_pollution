@@ -7,6 +7,7 @@
   "work-content": "Worked as a front-end intern at the internet company, 25sprout",
   "duration": "Internship experience 9 months",
   "web-skills": "Web Development Skills",
+  "swipe-to-right":"swipe to learn more about project experience > ",
   "front-end": "Front-end",
   "front-end-skills": "HTML、CSS、JavaScript、TypeScript、React",
   "back-end": "Back-end",
@@ -24,5 +25,5 @@
   "layout": "Website Layout Maintenance",
   "layout-context": "Use JavaScript and JQuery to maintain the front-end code and help solve the problems customers encounter when connecting to the back-end. The content covers UI rendering, interactive functions, cross-device integration, etc.",
   "error": "Error message handling optimization",
-  "error-context": "Based on React, Redux, and call API, display failure messages on the interface to optimize the user experience"
+  "error-context": "Based on React, Redux, and API, display failure messages on the interface to optimize the user experience"
 }

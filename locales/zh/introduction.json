@@ -7,6 +7,7 @@
   "work-content": "於新芽網路公司擔任前端開發實習生",
   "duration": "實習經驗 9 個月",
   "web-skills": "網頁開發技能",
+  "swipe-to-right":"右滑了解更多專案經驗 > ",
   "front-end": "前端",
   "front-end-skills": "HTML、CSS、JavaScript、TypeScript、React",
   "back-end": "後端",
@@ -24,5 +25,5 @@
   "layout": "網頁套版維護",
   "layout-context": "使用 JavaScript、JQuery 維護前端程式碼，並協助解決客戶於套版時遇到的問題，內容涵蓋 UI 呈現、互動功能與跨裝置整合等",
   "error": "錯誤訊息優化",
-  "error-context": "基於 React 和 Redux 串接 API，將失敗訊息呈現於介面以優化使用者體驗"
+  "error-context": "基於 React 和 Redux 串接 API，將回傳的失敗訊息依據不同原因呈現於介面以優化使用者體驗"
 }

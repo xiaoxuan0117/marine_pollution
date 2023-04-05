@@ -17,6 +17,13 @@
     @media screen and (max-width: 480px) {
       font-size: $font-h4;
     }
+
+    & .swipe {
+      font-size: $font-h6;
+      font-weight: 500;
+      color: $main-blue;
+      margin-top: 10px;
+    }
   }
 
   & .skillItem {

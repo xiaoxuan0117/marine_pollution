@@ -101,6 +101,7 @@ export default function WorkItem() {
               </div>
             </a>
           </div>
+          <div className="swipe">{t("swipe-to-right")}</div>
         </div>
       </div>
     </div>

@@ -9,5 +9,6 @@
   "enterprise-context": "This is a project about database created at school. It is based on PHP, HTML, and CSS. It provides users with the experience of sharing interviews and jobs. It includes functions such as registration, login, posting, and leaving a message.",
   "task-title": "GitHub Issues Management Site",
   "task-subtitle": "Dynamic website",
-  "task-context": "This is a website that can manage personal GitHub issues. The front-end uses tools such as React framework and Redux, React-router, and the back-end uses Nodejs and Express to set up the server, and connects data through the GitHub REST API. The website includes functions such as logging in, adding and editing issues, and searching for issues"
+  "task-context": "This is a website that can manage personal GitHub issues. The front-end uses tools such as React framework and Redux, React-router, and the back-end uses Nodejs and Express to set up the server, and connects data through the GitHub REST API. The website includes functions such as logging in, adding and editing issues, and searching for issues",
+  "swipe-to-right":"Swipe to see more works"
 }
