@@ -1,11 +1,11 @@
 @import "../../../sass/basic.scss";
 @import "../../../sass/color.scss";
 
-.expItem-wrapper {
+.resolve-wrapper {
   height: max-content;
   padding: 39px 0;
 
-  & .expItem {
+  & .resolve {
     position: relative;
     width: 100%;
 
@@ -34,16 +34,16 @@
       }
     }
 
-    & .project-section {
+    & .method-section {
       position: relative;
       width: 100%;
 
-      & .projects {
+      & .methods {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 
-        & .project {
+        & .method {
           flex: 1;
           padding-right: 25px;
           margin-bottom: 20px;

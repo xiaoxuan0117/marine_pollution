@@ -2,14 +2,28 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar } from "swiper";
 
-import ExperienceItem from "../../atoms/ExperienceItem";
-import SkillItem from "../../atoms/SkillItem";
+import Resolve from "../../atoms/Resolve";
+import Detail from "../../atoms/Detail";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
+
 import "./style.scss";
 
-export default function Skills() {
+export interface Item {
+  title: string
+  content: string
+}
+
+interface InfoProps {
+  detailTitle: string;
+  detail: Item[];
+  resolve: string;
+  method: Item[];
+}
+
+export default function Info(props: InfoProps) {
+  const { detailTitle, detail, resolve, method } = props;
   return (
     <div className="skills-wrapper">
       <div className="skills">
@@ -21,10 +35,10 @@ export default function Skills() {
           modules={[Scrollbar]}
         >
           <SwiperSlide>
-            <SkillItem />
+            <Detail detailTitle={detailTitle} detail={detail}/>
           </SwiperSlide>
           <SwiperSlide>
-            <ExperienceItem />
+            <Resolve resolve={resolve} method={method}/>
           </SwiperSlide>
         </Swiper>
       </div>

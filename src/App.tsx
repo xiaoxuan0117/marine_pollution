@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 import i18n from "./util/i18n";
 
 import Banner from "./components/orangnisms/Banner";
-import Introduction from "./components/orangnisms/Introduction";
+import Category from "./components/orangnisms/Category";
 import PinedBack from "./components/atoms/PinedBack";
 import FunctionDropdown from "./components/molecules/FunctionDropdown";
 import Works from "./components/orangnisms/Works";
@@ -52,7 +52,7 @@ function App() {
           trigger: content.current,
           scrub: 1,
           start: "top top",
-          end: `center bottom`,
+          end: `bottom bottom`,
           markers: {
             startColor: "purple",
             endColor: "blue",
@@ -117,7 +117,7 @@ function App() {
       />
       <div className="content" ref={content}>
         <Banner />
-        <Introduction />
+        <Category />
         <Works worksRef={works} />
         <OtherInfo />
         <Footer />

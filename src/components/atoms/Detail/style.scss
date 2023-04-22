@@ -1,15 +1,16 @@
 @import "../../../sass/basic.scss";
 @import "../../../sass/color.scss";
 
-.skillItem-wrapper {
+.detailItem-wrapper {
   height: 100%;
   padding: 39px 0;
   padding-right: 20px;
 
   & .item-title {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
     font-size: $font-h2;
     font-weight: 600;
     color: $light-blue;
@@ -26,7 +27,7 @@
     }
   }
 
-  & .skillItem {
+  & .detailItem {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -37,7 +38,7 @@
       margin-bottom: 30px;
     }
 
-    & .skill {
+    & .detail {
       margin-bottom: 23px;
       margin-right: 67px;
 

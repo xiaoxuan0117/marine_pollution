@@ -1,14 +1,17 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import Profile from "../../molecules/Profile";
-import Skills from "../../molecules/Skills";
+import Info from "../../molecules/Info";
+import {categorys} from '../../../data/category';
 
 import "./style.scss";
 
-export default function Introduction() {
+export default function Category() {
+  const { t } = useTranslation(["category"]);
   const introWrapper = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
@@ -34,12 +37,19 @@ export default function Introduction() {
   });
   return (
     <div id="intro-wrapper" className="intro-wrapper" ref={introWrapper}>
-      <div className="intro">
-        <div className="intro-flex">
-          <Profile />
-          <Skills />
+    <div className="intro-title">{t('title')}</div>
+    <div className="intro-summary">{t('summary')}</div>
+    {categorys.map((category, index) => {
+      return (
+        <div className="intro" key={index}>
+          <div className="intro-flex">
+            <Profile {...category.profile}/>
+            <Info {...category.info}/>
+          </div>
         </div>
-      </div>
+      )
+    })
+    }
     </div>
   );
 }

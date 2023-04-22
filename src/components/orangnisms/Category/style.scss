@@ -3,12 +3,30 @@
 
 .intro-wrapper {
   transition: all 0.5s;
+
   &.active {
-    padding: 0 26px;
+    padding: 0 60px;
 
     & .intro {
       border-radius: 8px;
+      margin-bottom: 70px;
     }
+  }
+
+  & .intro-title {
+    text-align: center;
+    font-size: $font-h3;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 16px;
+  }
+
+  & .intro-summary {
+    text-align: center;
+    font-size: $font-h4;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 40px;
   }
 
   & .intro {
@@ -20,7 +38,7 @@
     & .intro-flex {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       width: 100%;
 
       @media screen and (max-width: 660px) {
