@@ -1,0 +1,65 @@
+@import "../../../sass/basic.scss";
+@import "../../../sass/color.scss";
+
+.eventsHeader-wrapper {
+  width: 100%;
+  height: max-content;
+
+  & .eventsHeader {
+    display: flex;
+    flex-direction: row;
+
+    & .line {
+      width: 5px;
+      border-radius: 5px;
+      background-color: $white;
+      margin-right: 23px;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    & .event-content {
+      display: block;
+      flex: 1;
+
+      & .event-title {
+        font-size: $font-h3;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 10px;
+      }
+
+      & .event-subtitle {
+        font-size: $font-h4;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 25px;
+      }
+
+      & .event-context {
+        font-size: $font-h5;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 28px;
+        color: $white;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 660px) {
+        & .event-title {
+          font-size: $font-h4;
+        }
+
+        & .event-subtitle {
+          font-size: $font-h5;
+        }
+
+        & .event-context {
+          font-size: $font-h6;
+        }
+      }
+    }
+  }
+}
