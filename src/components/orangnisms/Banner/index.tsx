@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {addNewLine} from "../../../util";
 
 import "./style.scss";
 
@@ -8,9 +9,9 @@ export default function Banner() {
   return (
     <div id="banner" className="banner-wrapper">
       <div className="banner">
-        <div className="title">Hi! I'm Xiao-xuan</div>
+        <div className="title">{t('title')}</div>
         <div className="subtitle">
-          {t("intro")}
+          {addNewLine(t("intro"))}
           <br />
           {t("scroll")}
         </div>

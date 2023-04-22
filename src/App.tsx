@@ -45,6 +45,22 @@ function App() {
         },
       });
 
+      
+      gsap.to(pinedBack.current, {
+        backgroundColor: '#41666f',
+        scrollTrigger: {
+          trigger: content.current,
+          scrub: 1,
+          start: "top top",
+          end: `center bottom`,
+          markers: {
+            startColor: "purple",
+            endColor: "blue",
+            fontSize: "3rem",
+          },
+        },
+      });
+
       gsap.to(circle01.current, {
         x: 500,
         y: 100,

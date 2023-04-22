@@ -9,24 +9,13 @@
   align-items: center;
 
   & .banner {
-    padding-right: 30vw;
+    padding: 0 30vw 0 10vw;
 
     & .title {
       font-size: $font-h1;
       font-weight: 800;
       margin-bottom: 20px;
-      background-image: linear-gradient(
-        to right,
-        $light-blue,
-        $dark-pink,
-        $pink
-      );
-      background-size: 100%;
-      background-repeat: repeat;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
+      color: $white;
     }
     & .subtitle {
       font-size: $font-h5;
