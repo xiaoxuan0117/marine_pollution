@@ -15,7 +15,7 @@ export interface Item {
   content: string
 }
 
-interface InfoProps {
+export interface InfoProps {
   detailTitle: string;
   detail: Item[];
   resolve: string;

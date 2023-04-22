@@ -5,7 +5,7 @@ import trash from "../../../assets/trash.png";
 
 import "./style.scss";
 
-interface ProfileProps {
+export interface ProfileProps {
   image: string;
   name: string;
   about: {

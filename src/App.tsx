@@ -18,6 +18,7 @@ function App() {
   const content = useRef<HTMLDivElement>(null);
   const pinedBack = useRef<HTMLDivElement>(null);
   const works = useRef<HTMLDivElement>(null);
+  const category = useRef<HTMLDivElement>(null);
   const circle01 = useRef<HTMLDivElement>(null);
   const circle02 = useRef<HTMLDivElement>(null);
   const circle03 = useRef<HTMLDivElement>(null);
@@ -32,11 +33,27 @@ function App() {
           trigger: content.current,
           start: "top top",
           end: `${
-            (works.current?.offsetTop || 0) +
-            (works.current?.offsetHeight || 0) +
+            (category.current?.offsetTop || 0) +
+            (category.current?.offsetHeight || 0) +
             100
           }px bottom`,
           pin: pinedBack.current,
+          markers: {
+            startColor: "purple",
+            endColor: "blue",
+            fontSize: "3rem",
+          },
+        },
+      });
+
+      
+      gsap.to(pinedBack.current, {
+        backgroundColor: '#35545c',
+        scrollTrigger: {
+          trigger: content.current,
+          scrub: 1,
+          start: "top top",
+          end: `bottom bottom`,
           // markers: {
           //   startColor: "purple",
           //   endColor: "blue",
@@ -46,18 +63,17 @@ function App() {
       });
 
       
-      gsap.to(pinedBack.current, {
-        backgroundColor: '#41666f',
+      gsap.to(category.current, {
         scrollTrigger: {
-          trigger: content.current,
-          scrub: 1,
-          start: "top top",
-          end: `bottom bottom`,
-          markers: {
-            startColor: "purple",
-            endColor: "blue",
-            fontSize: "3rem",
-          },
+          trigger: category.current,
+          start: `top ${(category.current?.offsetTop || 0) - 200}px`,
+          end: "bottom top",
+          toggleClass: "active",
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "fuchsia",
+          //   fontSize: "3rem",
+          // },
         },
       });
 
@@ -117,8 +133,8 @@ function App() {
       />
       <div className="content" ref={content}>
         <Banner />
-        <Category />
         <Works worksRef={works} />
+        <Category categoryRef={category}/>
         <OtherInfo />
         <Footer />
       </div>
