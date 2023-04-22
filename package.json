@@ -1,9 +1,9 @@
 {
-  "name": "cv",
+  "name": "marine_pollution",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "xiaoxuan_resume",
+  "homepage": "marine_pollution",
   "scripts": {
     "dev": "vite",
     "cpdirEn": "copyfiles locales/en/*.json dist",
