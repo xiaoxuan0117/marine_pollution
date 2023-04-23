@@ -1,15 +1,15 @@
 import React from "react";
 
 import "./style.scss";
-import CodingInfo from "../../molecules/CodingInfo";
-import ScoreInfo from "../../molecules/ScoreInfo";
+import WhatToDo from "../../molecules/WhatToDo";
+import Organization from "../../molecules/Organization";
 
 export default function OtherInfo() {
   return (
     <div className="other-wrapper">
       <div className="other">
-        <CodingInfo />
-        <ScoreInfo />
+        <WhatToDo />
+        <Organization />
       </div>
     </div>
   );

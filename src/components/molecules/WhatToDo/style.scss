@@ -1,14 +1,14 @@
 @import "../../../sass/basic.scss";
 @import "../../../sass/color.scss";
 
-.codingInfo-wrapper {
+.whatToDo-wrapper {
   margin-bottom: 125px;
 
   @media screen and (max-width: 860px) {
     margin-bottom: 80px;
   }
 
-  & .codingInfo {
+  & .whatToDo {
     padding: 0 120px;
 
     @media screen and (max-width: 1200px) {
