@@ -38,17 +38,16 @@ function App() {
             100
           }px bottom`,
           pin: pinedBack.current,
-          markers: {
-            startColor: "purple",
-            endColor: "blue",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "blue",
+          //   fontSize: "3rem",
+          // },
         },
       });
 
-      
       gsap.to(pinedBack.current, {
-        backgroundColor: '#35545c',
+        backgroundColor: "#35545c",
         scrollTrigger: {
           trigger: content.current,
           scrub: 1,
@@ -62,7 +61,6 @@ function App() {
         },
       });
 
-      
       gsap.to(category.current, {
         scrollTrigger: {
           trigger: category.current,
@@ -134,7 +132,7 @@ function App() {
       <div className="content" ref={content}>
         <Banner />
         <Events eventsRef={events} />
-        <Category categoryRef={category}/>
+        <Category categoryRef={category} />
         <OtherInfo />
         <Footer />
       </div>
