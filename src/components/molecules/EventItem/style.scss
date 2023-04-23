@@ -53,47 +53,6 @@
             cursor: none;
           }
 
-          // &.r-and-b {
-          //   flex: 3;
-
-          //   & .image-inner {
-          //     width: 100%;
-          //     padding-top: 50%;
-
-          //     & img {
-          //       position: absolute;
-          //       top: 0;
-          //       left: 0;
-          //       width: 100%;
-          //       height: 100%;
-          //     }
-          //   }
-          // }
-
-          // &.rap {
-          //   flex: 1;
-
-          //   & .image-inner {
-          //     width: auto;
-          //     padding-top: 150%;
-
-          //     & .image {
-          //       background-image: url(../../../assets/webRap.png);
-          //     }
-          //   }
-          // }
-
-          // &.kpop {
-          //   flex: 1;
-
-          //   & .image-inner {
-          //     width: auto;
-          //     padding-top: 150%;
-          //     & .image {
-          //       background-image: url(../../../assets/webKpop.png);
-          //     }
-          //   }
-          // }
           & .imgbox {
             width: 100%;
 

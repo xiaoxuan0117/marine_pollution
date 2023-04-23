@@ -11,8 +11,8 @@ import "swiper/css/scrollbar";
 import "./style.scss";
 
 export interface Item {
-  title: string
-  content: string
+  title: string;
+  content: string;
 }
 
 export interface InfoProps {
@@ -25,8 +25,8 @@ export interface InfoProps {
 export default function Info(props: InfoProps) {
   const { detailTitle, detail, resolve, method } = props;
   return (
-    <div className="skills-wrapper">
-      <div className="skills">
+    <div className="info-wrapper">
+      <div className="info">
         <Swiper
           scrollbar={{
             hide: true,
@@ -35,10 +35,10 @@ export default function Info(props: InfoProps) {
           modules={[Scrollbar]}
         >
           <SwiperSlide>
-            <Detail detailTitle={detailTitle} detail={detail}/>
+            <Detail detailTitle={detailTitle} detail={detail} />
           </SwiperSlide>
           <SwiperSlide>
-            <Resolve resolve={resolve} method={method}/>
+            <Resolve resolve={resolve} method={method} />
           </SwiperSlide>
         </Swiper>
       </div>

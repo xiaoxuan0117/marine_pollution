@@ -1,18 +1,22 @@
 @import "../../../sass/basic.scss";
 @import "../../../sass/color.scss";
 
-.skills-wrapper {
+.info-wrapper {
   width: 60vw;
   padding: 0 20px 45px 0;
 
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 1023px) {
     width: 55vw;
+  }
+
+  @media screen and (max-width: 760px) {
+    width: 50vw;
   }
 
   @media screen and (max-width: 660px) {
     padding: 0;
     padding-bottom: 30px;
-    width: 80vw;
+    width: 70vw;
   }
 
   @media screen and (max-width: 480px) {
@@ -21,7 +25,7 @@
     width: 60vw;
   }
 
-  & .skills {
+  & .info {
     width: 100%;
 
     & .swiper-slide {

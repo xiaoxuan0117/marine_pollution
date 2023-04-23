@@ -7,6 +7,14 @@
 
   &.active {
     padding: 0 60px;
+
+    @media screen and (max-width: 800px) {
+      padding: 0 40px;
+    }
+
+    @media screen and (max-width: 660px) {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -24,4 +32,14 @@
   font-weight: 400;
   color: $white;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 660px) {
+  .intro-title {
+    font-size: $font-h4;
+  }
+
+  .intro-summary {
+    font-size: $font-h5;
+  }
 }
