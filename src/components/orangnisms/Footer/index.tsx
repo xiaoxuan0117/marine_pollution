@@ -50,6 +50,7 @@ export default function Footer() {
       <div className="footer">
         <div className="contect">
           <div className="title">{t("contact")}</div>
+          <div className="comment">{t("comment")}</div>
           <a href="mailto: xiaoxuanpan@gmail.com">{t("email")}</a>
           <br />
           <a href="https://github.com/xiaoxuan0117" target="_blank">

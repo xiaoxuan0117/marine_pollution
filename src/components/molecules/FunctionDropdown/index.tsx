@@ -115,12 +115,6 @@ export default function FunctionDropdown(props: {
                 </div>
               </div>
             </div>
-            <a
-              className="resume scroll-top"
-              href="https://drive.google.com/file/d/1lELRNel5cNHN1nys2IewBKjQY-ffA_VQ/view?usp=share_link"
-            >
-              {t("download-resume")}
-            </a>
           </div>
         </animated.div>
       </div>

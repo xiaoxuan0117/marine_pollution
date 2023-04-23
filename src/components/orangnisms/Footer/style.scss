@@ -13,14 +13,22 @@
     z-index: 5;
 
     & .title {
-      font-size: $font-h4;
+      font-size: $font-h5;
       letter-spacing: 2px;
       margin-bottom: 15px;
     }
 
+    & .comment {
+      text-decoration: none;
+      font-size: $font-p;
+      letter-spacing: 2px;
+      line-height: 30px;
+      color: $dark-blue;
+    }
+
     & a {
       text-decoration: none;
-      font-size: $font-h5;
+      font-size: $font-p;
       letter-spacing: 2px;
       line-height: 30px;
       color: $white;
