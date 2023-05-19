@@ -3,4 +3,6 @@ This is a webpage about marine pollution, made with React project created by Vit
 
 Visit site: https://github.com/xiaoxuan0117/marine_pollution
 
+![marine_pollution_gif](/src/assets/marine_pollution.gif)
+
 You can trigger the project by cloning it and running `yarn dev` in the terminal.
